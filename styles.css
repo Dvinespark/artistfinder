@@ -1,0 +1,99 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* KEYFRAME */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+/* BASE STYLE */
+:root {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #292c33;
+    background-color: #EEEFF3;
+    overflow-x: hidden;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+
+}
+/* HEADER */
+
+.logo {
+    color: rgba(103, 116, 198, 1);
+    font-size: 45px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    animation: fade-in 0.6s backwards;
+}
+
+.nav{
+
+}
+
+.links {
+    display: flex;
+    column-gap: 45px;
+
+}
+
+.link-item {
+    list-style: none;
+}
+
+.link {
+    font-size: 16px;
+    color: rgba(103, 116, 198, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.link:hover {
+    color: rgba(103, 116, 198, 1);
+    transition: all 0.2;
+}
+
+.link--btn {
+    background-color: cornsilk;
+    padding: 10px;
+
+}
